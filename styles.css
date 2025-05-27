@@ -1,0 +1,181 @@
+:root {
+  --red: #f93109;
+  --red-hover: #be2203;
+  --grey: #222;
+  --black: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--grey);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Generales  ------------------------------------- */
+.contenedor {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 7px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--red-hover);
+  cursor: pointer;
+}
+
+.heading {
+  padding: 20px;
+  background-color: var(--black);
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 20px;
+}
+
+.div-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 400px;
+}
+
+.div-btns {
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* HEADER ----------------------------------------- */
+header {
+  background-color: var(--red);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header img {
+  height: 50px;
+}
+
+header li {
+  list-style: none;
+}
+
+header li a {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header li a:hover {
+  color: var(--black);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Hero ------------------------------------------- */
+#hero {
+  color: var(--black);
+  background-color: coral;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+/* Nuevo Estreno ---------------------------------- */
+#nuevo-estreno {
+  margin: 70px 0;
+}
+
+/* Cartelera -------------------------------------- */
+#cartelera {
+  background-color: var(--black);
+  padding-bottom: 5px;
+}
+
+#cartelera .pelis {
+  margin: 40px 10px;
+  justify-content: space-around;
+}
+
+#cartelera figure img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#cartelera figure img:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+#cartelera figcaption {
+  font-size: 12px;
+}
+
+/* Maratón ---------------------------------------- */
+#maraton .contenedor {
+  margin: 70px auto;
+  gap: 50px;
+}
+
+#maraton article {
+  width: 50%;
+  gap: 20px;
+}
+
+#maraton article img {
+  width: 50%;
+  height: auto;
+  min-height: 400px;
+}
+
+/* FOOTER ----------------------------------------- */
+footer {
+  border-top: 1px solid --red;
+  background-color: var(--black);
+  padding: 20px 0;
+  justify-content: center !important;
+  gap: 20px;
+  border-top: 1px solid var(--red);
+}
+
+footer img {
+  height: 30px;
+}
